@@ -1,0 +1,9 @@
+#homepage{
+    background-image: url('../img/annie-spratt-OTy0mkqc2Yk-unsplash.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#homepage h1{
+   text-align: center;
+}

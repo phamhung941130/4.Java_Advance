@@ -1,0 +1,2 @@
+Hateoas: lấy thông tin chi tiết cho API
+-Linkto

@@ -1,0 +1,57 @@
+/* #account{
+    width: 90%;
+    height: 100%;
+    float: right;
+    border: 2px solid;
+    background-color:#f6f8fa;
+} */
+
+#account h1{
+    padding: 40px 10px;
+    height: 10%;
+
+}
+
+#account .filter{
+    padding: 20px 10px;
+    height: 10%;
+}
+ 
+#search_and_function{
+    padding: 20px 10px;
+    height: 10%;
+}
+
+ #search_and_function #search{
+     float: left;
+     border: 1px solid;
+     border-radius: 40px;  
+     background-color: #f6f8fa!important;
+ }
+ #search_and_function #search i{
+    float:   left;
+    padding: 2px 6px;
+
+}
+
+#search_and_function #search input{
+    border: none;   
+    border-radius: 40px;  
+    padding: 2px 6px;
+    background-color: transparent;
+}
+ 
+ #search_and_function #function{
+    padding-right: 30px;
+     font-size: 30px;
+     float: right;
+     line-height: 100%;
+ }
+ #search_and_function ul li{
+    display: inline;
+    height: 10%;
+ }
+ #search_and_function ul li i{
+     color: black;
+     padding: 0 10px;
+ }

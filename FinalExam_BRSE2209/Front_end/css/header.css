@@ -1,0 +1,39 @@
+#logo{
+    width: 10%;
+    height: 80px;
+    text-align:center;
+    line-height: 80px;
+    border: solid 2px;
+    float: left;
+}
+
+#top-menu{
+   width: 90%;
+   height: 80px;
+   /* background-color: bisque; */
+   float: right;
+   text-align: center;
+}
+
+#top-menu ul li{
+    display: inline;
+    padding-left: 15px
+}
+
+#top-menu ul #home a{
+    font-size: 48px;
+    float: left;
+    line-height: 80px;
+    color: black
+}
+
+#top-menu ul #icon{
+    padding-right: 20px;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+}
+#top-menu ul #icon i{
+    color: black;
+}
+

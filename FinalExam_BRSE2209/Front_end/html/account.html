@@ -1,0 +1,134 @@
+<link rel="stylesheet" href="../css/account.css">
+
+<div id="account">
+
+    <h1>ACCOUNT LIST</h1>
+    <div class="filter">
+        <select name="filter-role" id="filter-role">
+        <option value="">Choose role</option>
+        <option value="Admin">Admin</option>
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+    </select>
+        <select name="filter-department" id="filter-department">
+        <option value="">Choose Department</option>
+        
+    </select>
+        <i class="bi bi-funnel-fill" style="font-size: 24px" onclick="initAccount()"></i>
+    </div>
+    <div id="search_and_function">
+        <div id="search">
+            <i class="bi bi-search"></i>
+            <input type="search" id="searchterm" name="search" placeholder="Search by name">
+        </div>
+        <div id="function">
+            <ul>
+                <li><a href="#"><i class="bi bi-arrow-repeat"></i></a></li>
+                <li><a href="#" onclick="openCreateAccountModel()"><i class="bi bi-plus-square-fill"></i></a></li>
+                <li><a href="#" onclick="deleteAllAccounts()"><i class="bi bi-trash"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Username</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Role</th>
+                <th scope="col">Department</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+            <td scope="row"><input type="checkbox"></td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>sale</td>
+            <td>
+                <a href="#"><i class="bi bi-pencil"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
+            </td>
+        </tr>
+        <tr>
+            <td scope="row"><input type="checkbox"></td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>HR</td>
+            <td>
+                <a href="#"><i class="bi bi-pencil"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
+            </td>
+        </tr> -->
+        </tbody>
+    </table>
+
+    <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <div class="m-4">
+        <div id="myModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="model-title" class="modal-title">Add Account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Username -->
+                        <!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
+                        <label><b>Username</b></label>
+                        <input id="username" type="text" class="form-control" placeholder="Username" aria-label="username" aria-describedby="basic-addon1">
+                        <p style="color: red; display: none;" id="usernameErrorMessage">Username phải từ 6 đến 10 ký tự</p>
+
+                        <!-- Firstname -->
+                        <label><b>Firstname</b> <input id="firstname" type="text" class="form-control"
+                            placeholder="Firstname" aria-label="firstname" aria-describedby="basic-addon1"></label>
+                        <p style="color: red; display: none;" id="firstnameErrorMessage">Firstname không được null</p>
+
+
+                        <!-- Lastname -->
+                        <label><b>Lastname</b><input id="lastname" type="text" class="form-control" placeholder="Lastname"
+                            aria-label="lastname" aria-describedby="basic-addon1"></label>
+                        <p style="color: red; display: none;" id="lastnameErrorMessage">Lastname không được null</p>
+
+                        <!-- Role -->
+                        </br>
+                        <label><b>Role</b></label>
+                        <select id="select-role" class="form-select" aria-label="Default select example">
+                        <option value="" selected>Choose role</option>
+                        <option value="ADMIN">Admin</option>
+                        <option value="MANAGER">Manager</option>
+                        <option value="EMPLOYEE">Employee</option>
+                    </select>
+                        <p style="color: red; display: none;" id="roleErrorMessage">Role phải là các giá trị: ADMIN, MANAGER, EMPLOYEE</p>
+
+                        <!-- DepartmentId -->
+                        </br>
+                        <label><b>Department</b></label>
+                        <select id="select-department" class="form-select" aria-label="Default select example">
+                        <option value="" selected>Choose Department</option>
+                    </select>
+                        <p style="color: red; display: none;" id="departmentErrorMessage">Department phải nhập số từ 1 đến 10</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="saveAccount()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

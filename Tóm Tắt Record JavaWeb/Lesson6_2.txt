@@ -1,0 +1,11 @@
+*Srping Core
+Component
+@scope
+@Qualifier(đặt tên và chọn bean)
+@Primary(Ưu tiên)
+Tổng quan Spring
+- Open-Source
+- Ko cần cài đặt Thư viện tay chỉ cần Pom
+-Design: DI IoC AOP
+*Spring Boot
+@CrossOrigin

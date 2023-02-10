@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(153, 148, 246);
+    display: flex;
+    justify-content: space-around;
+}
+
+#banner {
+    flex: 2;
+    line-height: 80px;
+}
+
+.banner_icon {
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#sign_login {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login,
+.sign_up {
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#navbar {
+    flex: 1;
+    text-align: center;
+}
+
+#navbar .navbar_icon {
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#content {
+    flex: 15;
+    margin-left: 15px;
+}
+
+#content .list_group {
+    margin-top: 20px;
+}
+
+#content .list_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 20px;
+    min-height: 30px;
+}
+
+#content .list_navbar .list_search {
+    height: 100%;
+    width: 500px;
+    line-height: 30px;
+}
+
+.list_search input[type="text"] {
+    width: 160px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 12px;
+    transition: width 0.4s ease-in-out;
+}
+
+.list_search input[type="text"]:focus {
+    width: 100%;
+}
+
+#content .list_navbar .list_flow {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.list_navbar .list_flow .flow_icon {
+    cursor: pointer;
+}
+
+#content .list_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#content .list_table table,
+th,
+td {
+    border: 1px solid black;
+}
+
+#content .list_table th,
+td {
+    padding: 6px 12px;
+}
+
+.table_header button {
+    padding: 2px 6px;
+}
+
+.table_header button:hover {
+    cursor: pointer;
+}
+
+.banner_icon:hover,
+.login:hover,
+.sign_up:hover,
+.flow_icon:hover,
+.navbar_icon:hover {
+    opacity: 0.6;
+    color: red;
+    transition: All 0.3s ease;
+}
+
+#footer {}
+
+#modal {
+    position: absolute;
+    /* top: -100%; */
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* #myModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+.modal-content {
+    width: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 8px #888888;
+    background-color: white;
+}
+
+.modal-header {
+    display: flex;
+    border-bottom: 0.2px solid gray;
+    justify-content: space-between;
+}
+
+h1.modal-title {
+    padding: 20px;
+}
+
+button.close {
+    height: 20px;
+    width: 20px;
+    margin: 4px;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-container {
+    margin: 30px;
+}
+
+.modal-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-container input {
+    margin: 10px 0 30px;
+    padding: 12px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-footer {
+    border-top: 0.2px solid gray;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+button.btn.btn-secondary {
+    padding: 10px;
+    background-color: #e5e3e3;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn.btn-secondary:hover,
+button.close:hover {
+    opacity: 0.8;
+    color: white;
+    background-color: red;
+}
+
+button.btn.btn-primary {
+    padding: 10px 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button.btn.btn-primary:hover {
+    opacity: 1;
+}

@@ -1,0 +1,7 @@
+Data JPA
+*Custom query
+@Query
+@Modifying,@Transactional -> DEL,UPdate,Insert
+Paging,sort
+Lombok
+
